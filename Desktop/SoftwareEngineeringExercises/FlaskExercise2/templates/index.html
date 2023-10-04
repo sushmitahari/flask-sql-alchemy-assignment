@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block body %}
+<form action='/calculate' method='GET' >
+    <div class="mb-3">
+      <label for="exampleInputInteger1" class="form-label">Integer</label>
+      <input type="text" class="form-control" id="exampleInputInteger1" name= "Integer">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock %}
