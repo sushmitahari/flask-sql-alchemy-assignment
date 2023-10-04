@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h1 class="mx-3 my-3">Register</h1>
+<form action="/register" method="POST">
+    <label for="name" class="col-sm-2 py-2">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="name" placeholder="Enter name" required>
+        </div>
+    <div class="form-group px-5 py-2">
+        <label for="type" class="col-sm-2 py-2">Organization</label>
+        <div class="col-sm-10">
+            <select class="form-control" id="exampleFormControlSelect1" required name="Organization">
+                <option selected>Organization</option>
+                <option value = "Charlotte Hack">Charlotte Hack</option>
+                <option value = "Code9">Code9</option>
+                <option value = "Girls Who Code">Girls Who Code</option>
+                <option value = "Hackathon">Hackathon</option>
+                <option value = "ACM-W">ACM-W</option>
+            </select>
+        </div>
+
+        
+    </div>
+    <button type="submit" class="btn btn-primary mx-5">Register</button>
+</form>
+{% endblock %}
